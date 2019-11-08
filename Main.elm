@@ -188,7 +188,7 @@ composeNumber i radix name separator =
                 ""
 
         prefix =
-            if i > 100 then
+            if i >= 100 then
                 intToEnglish (i // radix) ++ " "
 
             else
